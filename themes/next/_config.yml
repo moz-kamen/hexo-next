@@ -55,7 +55,7 @@ favicon:
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link, and install hexo-generator-feed: `npm install hexo-generator-feed --save`.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /atom.xml
 
 footer:
   # Specify the date when the site was setup.
@@ -136,10 +136,10 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -154,9 +154,11 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/moz-kamen || github
+  bilibili: https://space.bilibili.com/1792526 || tv
+  简书: https://www.jianshu.com/u/b944f54ff0a2 || book
+  E-Mail: mailto:57050499@qq.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -194,7 +196,7 @@ avatar:
   # in theme directory(source/images): /images/avatar.gif
   # in site  directory(source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /images/customer/header/header.jpg
   # If true, the avatar would be dispalyed in circle. 
   rounded: false
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -237,10 +239,10 @@ sidebar:
   offset: 12
 
   # Back to top in sidebar (only for Pisces | Gemini).
-  b2t: false
+  b2t: true
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -262,8 +264,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 0
 
 # Post meta display settings
 post_meta:
@@ -303,9 +305,9 @@ codeblock:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-#reward_comment: Donate comment here
-#wechatpay: /images/wechatpay.jpg
-#alipay: /images/alipay.jpg
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /images/customer/receipt/wechatpay.png
+alipay: /images/customer/receipt/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
 # Related popular posts
@@ -384,7 +386,7 @@ sidebar_width:
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
   host:
@@ -417,8 +419,8 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family:
-    size:
+    family: Damion
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
@@ -837,7 +839,7 @@ pace_theme: pace-theme-minimal
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
